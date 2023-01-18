@@ -25,7 +25,7 @@ export default{
         </div>
       </div>
       <div class="col-3">
-        <input type="search" class="form-control" placeholder="inserisci film" />
+        <input type="search" class="form-control" placeholder="inserisci il film ricerato" />
       </div>
     </div>
   </div>
