@@ -1,6 +1,6 @@
 <script>
 
-import Search from "./Search.vue";
+
 
 export default{
     data() {
@@ -9,7 +9,7 @@ export default{
         }
     },
     components: {
-        Search,
+        
     }
 };
 
@@ -25,7 +25,7 @@ export default{
         </div>
       </div>
       <div class="col-3">
-        <AppSearch></AppSearch>
+        <input type="search" class="form-control" placeholder="inserisci film" />
       </div>
     </div>
   </div>

@@ -24,7 +24,7 @@ export default{
 
   methods: {
     getMovies() {
-      let myUrl = `${store.url}${store.selectedMovie}`
+      let myUrl = `${store.url}${store.selectMovie}`
       axios.get(myUrl).then((response) => {
         store.moviesArr = response.data.results;
       });
@@ -35,13 +35,20 @@ export default{
 
 <template lang="">
  <header>
-    <AppHeader></AppHeader>
+    <AppHeader />
   </header>
   <main class="bg-secondary">
-    <AppMain></AppMain>
+    <AppMain />
   </main>
 </template>
 
 <style lang="scss">
-  @use "./components/styles/generals.scss" as *;
+ @import 'node_modules/bootstrap/scss/bootstrap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 </style>
