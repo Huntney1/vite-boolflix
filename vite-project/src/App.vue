@@ -30,7 +30,7 @@ export default{
 
 <style lang="scss">
  @import 'node_modules/bootstrap/scss/bootstrap';
-
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -39,8 +39,9 @@ export default{
 }
 
 body{
-  background-color: black;
-
+  background-color: #141414;
+  font-family: 'Bebas Neue', cursive, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
 
 </style>

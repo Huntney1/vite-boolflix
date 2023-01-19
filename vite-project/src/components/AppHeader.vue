@@ -43,7 +43,8 @@ export default {
             <div class="row d-flex p-3 justify-content-between align-items-center">
                 <div class="col-4">
                     <div>
-                        <h1 class="m-0 text-danger">BOOLFLIX</h1>
+                        <a href="https://fontmeme.com/netflix-font/">
+                          <img src="https://fontmeme.com/permalink/230119/38f1434baa5a03813a7f7a2bc56dafc2.png" alt="netflix-font" border="0"></a>
                     </div>
                 </div>
                 <div class="col-8 ">
@@ -58,4 +59,6 @@ export default {
 <style lang="scss" scoped>
 @use "../components/style/partials/variables" as *;
 @use "../components/style/partials/mixins" as *;
+
+
 </style>

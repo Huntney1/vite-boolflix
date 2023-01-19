@@ -40,11 +40,11 @@ export default {
             let num = Math.floor(valore.vote_average / 2);
             let starsarray = []
             for(let i = 0; i < num; i++){
-                starsarray.push('fa-solid fa star')
+                starsarray.push('fa-solid fa-star')
             }
             let starEmpty = 5 - num;
             for(let i = 0; i < starEmpty; i++){
-                starsarray.push('fa regular fa-star')
+                starsarray.push('fa-regular fa-star')
             }
             return starsarray
         },
@@ -84,10 +84,10 @@ height: 100%;
 
 }
 .titolo{
-color:red;
+color: #e50914;
 }
 .voto{
-color: red;
+color:  #e50914;
 }
 
 </style>
