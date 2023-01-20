@@ -27,7 +27,7 @@ export default {
       ho trovato - {{store.movieArr.length}} - contenuti 
   </div>
    
-  <div class="row row-cols-6 gap-4 justify-content-between ">
+  <div class="row row-cols-6 gap-4 justify-content-between " id="marg-neg">
       <cardFilm v-for="(item, index) in store.movieArr" :key="index" :movie="item"></cardFilm>
       <Serie v-for="(item, index) in store.serieArr" :key="index" :cardSerie="item"></Serie>
   
@@ -44,5 +44,9 @@ export default {
     color: white;
     font-size: 1.5em;
     margin-top: 2em
+}
+
+#marg-neg{
+    margin-top: -3em;
 }
 </style>
