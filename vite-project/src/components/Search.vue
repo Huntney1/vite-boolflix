@@ -10,8 +10,8 @@ export default {
 </script>
 <template lang="">
 <div class="input-group mb-3">
-
-<input type="text" class="form-control" placeholder="Cerca film o serie  " aria-label="Recipient's username" aria-describedby="button-addon2"
+<!--* ricerca film e serie ( input & button )-->
+<input type="text" class="form-control" placeholder="Cerca film o serie  " aria-label="Recipient's username" aria-describedby="button-add2"
 v-model="value" @keyup.enter="$emit ('buttonClick', value)">
 <button class="btn btn-outline-secondary" type="button" id="button-2" @click="$emit ('buttonClick', value)">cerca</button>
 

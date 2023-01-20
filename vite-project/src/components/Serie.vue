@@ -26,10 +26,13 @@ export default {
             leng = valore.original_language;
             break;
         }
+
         let upperLeng = leng.toUpperCase();
         return upperLeng;
+
       }
     },
+
     /* immagine di copertina */
     imageEmpty() {
       if (this.cardSerie.poster_path != null) {
@@ -38,6 +41,7 @@ export default {
         return "non presente ";
       }
     },
+
     /* voto stelle */
     stars(valore) {
       let num = Math.floor(valore.vote_average / 2);
@@ -51,6 +55,7 @@ export default {
       }
       return starsarray;
     },
+
     /* descrizione serie tv */
     descriptionCut() {
       if (this.cardSerie.overview.length > 150) {
@@ -62,13 +67,16 @@ export default {
     },
   },
 };
+
 </script>
 <template lang="">
-<div class="card" @mouseenter=" hover = true" @mouseleave=" hover = false">
-    <img class="img-cover" :src="imageEmpty()" alt="cardSerie.title">
+
+    <!--* creo mouse hover sulla card serie -->
+    <div class="card" @mouseenter=" hover = true" @mouseleave=" hover = false">
+        <img class="img-cover" :src="imageEmpty()" alt="cardSerie.title">
     
+    <!--* contenuto hover con info -->
         <div class="card-info" v-if="hover">
-            
             <h3 class="titolo">{{cardSerie.name}}</h3>
             <p>{{ descriptionCut() }}</p>
             <h3>Lingua {{cardSerie.original_language}}</h3> 
