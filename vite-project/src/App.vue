@@ -46,39 +46,42 @@ body{
 }
 
 .card{
-    min-width: 250px;
-    min-height: 400px;
+   /*min-width: 18em;
+    min-height: 27em; */
     display: flex;
     flex-direction: column;
     position: relative;
-   padding: 1rem;
+    top: 0;
+    left: 0;
+    padding: 0.25rem;
+    background-color: #C50914;
 
     .img-cover{
-        height: 100%;
-        object-fit: cover;
-
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.2em;
     }
 
     .card-info{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 1rem;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color:rgba(0, 0, 0, 0.8) ;
-        color:white
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color:rgba(0, 0, 0, 0.8) ;
+      color:white
     }
     .language-img{
-        width: 30px;
+      width: 30px;
     }
 
     .titolo{
-        margin-bottom: 1rem;
-        color: red
+      margin-bottom: 1rem;
+      color: #C50914;
     }
 }
 
