@@ -46,8 +46,8 @@ body{
 }
 
 .card{
-   /*min-width: 18em;
-    min-height: 27em; */
+   min-width: 18em;
+    min-height: 27em;
     display: flex;
     flex-direction: column;
     position: relative;
