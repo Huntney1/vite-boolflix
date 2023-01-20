@@ -54,7 +54,7 @@ export default {
                           <img src="https://fontmeme.com/permalink/230119/38f1434baa5a03813a7f7a2bc56dafc2.png" alt="netflix-font" border="0"></a>
                     </div>
                 </div>
-                <div class="col-8 ">
+                <div class="col-5 ">
                     <Search @buttonClick="ricercaTutto"></Search>
                 </div>
             </div>
@@ -68,7 +68,8 @@ export default {
 @use "../components/style/partials/mixins" as *;
 
 header{
-    height: 75px;
+
+    height: 7em;
     background-color: black;
     display: flex;
     justify-content: space-between;
