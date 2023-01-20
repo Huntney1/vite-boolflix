@@ -46,7 +46,7 @@ export default {
     <header>
     
         <div class="container">
-            <div class="row d-flex p-3  align-items-center">
+            <div class="row d-flex p-3  align-items-center justify-content-between">
                 <div class="col-4">
                   <!--* Logo Boolflix -->
                     <div>
@@ -54,7 +54,7 @@ export default {
                           <img src="https://fontmeme.com/permalink/230119/38f1434baa5a03813a7f7a2bc56dafc2.png" alt="netflix-font" border="0"></a>
                     </div>
                 </div>
-                <div class="col-5 ">
+                <div class="col-5 text-center mt-2">
                     <Search @buttonClick="ricercaTutto"></Search>
                 </div>
             </div>
@@ -69,7 +69,7 @@ export default {
 
 header{
 
-    height: 7em;
+    height: 7.5em;
     background-color: black;
     display: flex;
     justify-content: space-between;
